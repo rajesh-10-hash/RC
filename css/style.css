@@ -1,0 +1,326 @@
+ /* =========================
+FILE: css/style.css
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111;
+    font-family:Arial,sans-serif;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.custom-navbar{
+
+    background:rgba(0,0,0,0.8);
+    padding:15px 0;
+    z-index:9999;
+
+}
+
+.navbar-brand{
+
+    color:white !important;
+    font-size:30px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+    font-weight:bold;
+    font-size:17px;
+
+}
+
+.nav-link:hover{
+
+    color:orange !important;
+
+}
+
+/* TOP RIGHT LOGO */
+
+.top-logo{
+
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:3px solid orange;
+
+    animation:fireGlow 2s infinite alternate;
+
+}
+
+/* HERO SECTION */
+
+.hero-section{
+
+    min-height:100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+    url('../images/background.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+/* HERO LOGO */
+
+.hero-logo{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+
+    animation:fireGlow 2s infinite alternate;
+
+}
+
+@keyframes fireGlow{
+
+    from{
+        box-shadow:0 0 20px orange;
+    }
+
+    to{
+        box-shadow:0 0 50px red;
+    }
+
+}
+
+.festival-badge{
+
+    background:orange;
+    color:black;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+}
+
+.hero-title{
+
+    font-size:70px;
+    font-weight:bold;
+
+}
+
+.hero-subtitle{
+
+    font-size:28px;
+    color:orange;
+
+}
+
+.hero-text{
+
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+
+}
+
+/* ABOUT */
+
+.about-preview{
+
+    background:#111;
+
+}
+
+.section-title{
+
+    font-size:45px;
+    font-weight:bold;
+
+}
+
+.about-text{
+
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+/* STATS */
+
+.stats-section{
+
+    background:#181818;
+
+}
+
+.stat-card{
+
+    background:#222;
+    padding:40px 20px;
+    border-radius:20px;
+
+    transition:0.4s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-card h1{
+
+    color:orange;
+    font-size:50px;
+
+}
+
+/* FOOTER */
+
+.footer-section{
+
+    background:black;
+
+}
+
+.social-icons a{
+
+    color:orange;
+    font-size:30px;
+    margin:10px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size:45px;
+    }
+
+    .hero-subtitle{
+        font-size:22px;
+    }
+
+    .top-logo{
+        width:50px;
+        height:50px;
+    }
+    /* LOGIN PAGE */
+
+ /* =========================
+LOGIN PAGE
+========================= */
+
+.login-section{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ),
+    url('../images/background.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    padding:20px;
+}
+
+.login-box{
+
+    width:100%;
+    max-width:420px;
+
+    background:#222;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 30px rgba(255,165,0,0.3);
+
+}
+
+.login-box h1{
+
+    color:orange;
+    font-size:35px;
+    font-weight:bold;
+
+}
+
+.login-logo{
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:auto;
+    margin-bottom:25px;
+
+    animation:fireGlow 2s infinite alternate;
+
+}
+
+.login-box .form-control{
+
+    background:#111;
+    border:1px solid #444;
+    color:white;
+
+    padding:14px;
+    border-radius:10px;
+
+}
+
+.login-box .form-control:focus{
+
+    background:#111;
+    color:white;
+
+    border-color:orange;
+
+    box-shadow:none;
+
+}
+
+.login-box .btn{
+
+    padding:14px;
+    font-weight:bold;
+    font-size:18px;
+
+    border-radius:10px;
+
+}
+}
